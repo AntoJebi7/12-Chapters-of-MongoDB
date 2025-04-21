@@ -95,9 +95,6 @@ npm install
 
 Here’s a taste of what you’ll find:
 
-```js
-// Find all documents in the collection where age is greater than 25
-
 ```
 const users = await db.collection('people').find({ age: { $gt: 25 } }).toArray();
 console.log(users);

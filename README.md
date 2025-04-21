@@ -6,7 +6,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/AntoJebi7/MongoDB_Specimen?color=blueviolet&style=for-the-badge"/>
-  <img src="https://img.shields.io/github/languages/top/AntoJebi7/MongoDB?style=for-the-badge&color=success"/>
   <img src="https://img.shields.io/github/last-commit/AntoJebi7/MongoDB_Specimen?style=for-the-badge&color=brightgreen"/>
 </p>
 

@@ -39,25 +39,25 @@ db.users.insertMany([
 ## 🔍 READ
 ## 🔎 Find One Document
 ```
-db.users.findOne()
+db.users.findOne({name:"ABC"})
 ```
 ## 🔎 Find All Documents
 ```
-db.users.find()
+db.users.find({"details.position":"Mongo"})
 ```
 ## 🔄 UPDATE
 ## 📝 Update One Document
 ```
 db.users.updateOne(
   { name: "Alice" },
-  { $set: { age: 26 } }
+  { $set: { "age": 26 } }
 )
 ```
 ## 📝 Update Multiple Documents
 ```
 db.users.updateMany(
-  { age: { $gt: 25 } },
-  { $set: { status: "active" } }
+  { "school.tally": "low" },
+  { $set: { "school.fees": "high" } }
 )
 ```
 ## ❌ DELETE
@@ -67,7 +67,7 @@ db.users.deleteOne({ name: "Bob" })
 ```
 ## 🗑️ Delete Multiple Documents
 ```
-db.users.deleteMany({ age: { $lt: 30 } })
+db.users.deleteMany({ age: 30 })
 ```
 ## Summary
 ```yaml

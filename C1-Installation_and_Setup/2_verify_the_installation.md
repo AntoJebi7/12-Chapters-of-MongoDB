@@ -8,7 +8,7 @@ After installation, follow these steps to verify and configure MongoDB properly.
 
 Open **Command Prompt** and type:
 
-```sh
+
 mongod
 📌 Note:
 If you installed using Complete Setup, this should work immediately.

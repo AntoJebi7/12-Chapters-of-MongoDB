@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongo DB + Node JS</title>
+</head>
+<body>
+    <h1>CRUD APP - {{title}} </h1>
+    <h2>{{msg}}</h2>
+    {{#if edit_id}}
+    
+    <h2>Edit/Update Operation - Mongo DB</h2>
+    <form action="/editUser/{{edit_id}}" method="post">
+        <label for="name" >Update your Name :</label>
+        <input type="text" name="name" value="{{editor_name}}" placeholder="Name">
+        <br/>
+        <br/>
+        <label for="age" >Update your Age :</label>
+        <input type="number" name="age" placeholder="Age" value="{{editor_age}}">
+        <br/>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+    {{else}}
+    <h2>Create Operation - Mongo DB</h2>
+    <form action="/insertUser" method="post">
+        <label for="name" >Enter your Name :</label>
+        <input type="text" name="name" placeholder="Name">
+        <br/>
+        <br/>
+        <label for="age" >Enter your Age :</label>
+        <input type="number" name="age" placeholder="Age">
+        <br/>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+    {{/if}}
+    <br/>
+    <h1>List of users and their age</h1>
+    <ul>
+        {{#each userData}}
+        <li>Age :{{this.age}} - Name: {{this.name}} 
+            <a href="/?edit_id={{this._id}}">Edit</a> 
+        <a href="/?delete_id={{this._id}}" onclick="return confirm('Are you sure?')">Delete</a></li>
+        {{/each }}
+    </ul>
+    <br/>
+    
+</body>
+</html>

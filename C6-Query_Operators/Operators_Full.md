@@ -34,12 +34,12 @@ db.items.find({ price: { $gt: 50, $lt: 150 } })
 Used to combine multiple conditions.
 
 ```
-Operator	Description	Example
+Operator	Description	                                Example
 
-$and	    All conditions must be true	{ $and: [ { age: { $gt: 20 } }, { active: true } ] }
-$or	        At least one condition is true	{ $or: [ { role: "admin" }, { role: "editor" } ] }
-$not	    Inverts a condition	{ age: { $not: { $gte: 18 } } }
-$nor	    None of the conditions are true	{ $nor: [ { banned: true }, { suspended: true } ] }
+$and	    All conditions must be true	            { $and: [ { age: { $gt: 20 } }, { active: true } ] }
+$or	        At least one condition is true	        { $or: [ { role: "admin" }, { role: "editor" } ] }
+$not	    Inverts a condition	                    { age: { $not: { $gte: 18 } } }
+$nor	    None of the conditions are true	        { $nor: [ { banned: true }, { suspended: true } ] }
 
 ```
 
@@ -53,11 +53,11 @@ db.users.find({ $or: [ { age: { $lt: 18 } }, { age: { $gt: 60 } } ] })
 Used to evaluate field values with conditions like regex or expressions.
 
 ```
-Operator	Description	Example
-$regex	    Match using regular expression	{ name: { $regex: "^A", $options: "i" } }
-$expr	    Use aggregation expressions in queries	{ $expr: { $gt: ["$spend", "$budget"] } }
-$mod	    Modulus (remainder) match	{ qty: { $mod: [4, 0] } } // divisible by 4
-$text	    Full-text search (needs text index)	{ $text: { $search: "mongodb tutorial" } }
+Operator	Description	                                    Example
+$regex	    Match using regular expression	            { name: { $regex: "^A", $options: "i" } }
+$expr	    Use aggregation expressions in queries	    { $expr: { $gt: ["$spend", "$budget"] } }
+$mod	    Modulus (remainder) match	                { qty: { $mod: [4, 0] } } // divisible by 4
+$text	    Full-text search (needs text index)	        { $text: { $search: "mongodb tutorial" } }
 ```
 🔍 Example: Find documents where the name starts with "J"
 

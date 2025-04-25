@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.13.3",
+    "nodemon": "^3.1.10"
+  },
+  "name": "c7-nodejs_and_mongodb_crud",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -12,4 +12,4 @@ const OrderSchema = new mongoose.Schema({
     
 const Order = mongoose.model('Order', OrderSchema);
     
-export default Order;
+export default Order;  

@@ -117,7 +117,8 @@ db.students.aggregate([
 ])
 ```
 Then, optionally, nested lookup to fetch course details too!
-## result 
+
+## Result:
 ```
 [
   {

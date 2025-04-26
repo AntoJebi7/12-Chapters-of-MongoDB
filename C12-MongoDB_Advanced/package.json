@@ -1,0 +1,17 @@
+{
+  "name": "c12-mongodb_advanced",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^8.14.0",
+    "nodemon": "^3.1.10"
+  }
+}

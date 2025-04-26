@@ -117,6 +117,26 @@ db.students.aggregate([
 ])
 ```
 Then, optionally, nested lookup to fetch course details too!
+## result 
+```
+[
+  {
+    _id: 1,
+    name: "John",
+    enrollments: [
+      { student_id: 1, course_id: 301 },
+      { student_id: 1, course_id: 302 }
+    ]
+  },
+  {
+    _id: 2,
+    name: "Emma",
+    enrollments: [
+      { student_id: 2, course_id: 301 }
+    ]
+  }
+]
+```
 
 ## 📢 Quick Tip
 

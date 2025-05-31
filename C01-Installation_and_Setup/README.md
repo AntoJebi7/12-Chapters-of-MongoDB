@@ -1,4 +1,4 @@
-# MongoDB Installation Guide
+# MongoDB Installation SetUp
 
 ## Introduction
 This repository provides a step-by-step guide for installing MongoDB on various operating systems. MongoDB is a popular NoSQL database used for high-performance, high availability, and easy scalability.
